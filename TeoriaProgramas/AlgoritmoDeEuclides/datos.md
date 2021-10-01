@@ -1,4 +1,4 @@
-# Algoritmo de Euclido
+# Algoritmo de Euclides
 
 ## Iteraciones
 

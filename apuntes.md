@@ -81,12 +81,6 @@ Las variables declaradas dentro de un bloque solo se pueden utilizar dentro de e
 
 ---
 
-### Entrada de información
-
-
-
----
-
 ### Secuencias
 
 - Se conoce la cantidad de elementos

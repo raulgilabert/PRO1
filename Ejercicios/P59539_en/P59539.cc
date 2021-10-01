@@ -15,7 +15,7 @@ int main() {
     int n;
     cin >> n;
 
-    // Harmonic number
+    // Harmonic number calc
     double harmonic = 0;
     for (int i = 1; i <= n; ++i) {
         harmonic += 1/double(i);
