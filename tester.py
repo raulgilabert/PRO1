@@ -22,10 +22,9 @@ The .cc program must be compiled and must be named as the directory deleting the
 
 name = input("Test: ")
 num = input("Num of tests: ")
-exercisesDir = input("Directory of the exercises: ")
 language = input("Language (en, es, ca): ")
 
-dir = exercisesDir + "/" + name + "_" + language + "/"
+dir = "Ejercicios/" + name + "_" + language + "/"
 
 for i in range(1, 1 + int(num)):
     print("-------------------")
