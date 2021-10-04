@@ -27,10 +27,12 @@
 - X64734 (copiar del jutge)
 
 - P27341
+- P31170
 - P34451
 - P37500
 - P50327
 - P59539
+- P59875
 - P78142
 
 ## Hechos sin entregar
@@ -41,5 +43,6 @@
 
 ## Por hacer
 
+- P28754
 
 ## Rehacer
