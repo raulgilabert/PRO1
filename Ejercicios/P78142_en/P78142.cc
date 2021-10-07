@@ -10,16 +10,17 @@ using namespace std;
 int main() {
     // Number and sum are positive real numbers
     double number, sum;
-    int i;
-    sum = i = 0;
+    int divisor;
+    sum = divisor = 0;
 
     // While input is submitted, execute the while loop
     while (cin >> number) {
+        // Add the number to sum and increase the divisor
         sum += number;
-        ++i;
+        ++divisor;
     }
 
     cout.setf(ios::fixed);
-    cout.precision(4);
-    cout << double(sum)/i << endl;
+    cout.precision(2);
+    cout << sum/divisor << endl;
 }

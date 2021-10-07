@@ -16,8 +16,7 @@ int main() {
     int n;
     cin >> n;
 
-    for (int i = 0; i < n; ++i)
-    {
+    for (int i = 0; i < n; ++i) {
         // Read the description
         string descript;
         cin >> descript;
@@ -27,7 +26,6 @@ int main() {
 
         // Rectangle
         if (descript == "rectangle") {
-            // length and width are real numbers
             double length, width;
             cin >> length >> width;
 
@@ -36,7 +34,6 @@ int main() {
 
         // Circle
         else {
-            // radius is a real number
             double radius;
             cin >> radius;
 

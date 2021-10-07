@@ -13,8 +13,7 @@ int main() {
     while (cin >> a >> b) {
         int sum = 0;
 
-        for (int i = a; i < b + 1; i++)
-        {
+        for (int i = a; i < b + 1; i++) {
             sum += i*i*i;
         }
         

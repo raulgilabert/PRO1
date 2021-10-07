@@ -31,10 +31,13 @@
 - P31170
 - P34451
 - P37500
+- P39057
 - P50327
 - P59539
 - P59875
 - P78142
+
+Importante: rehacer ejercicios de reversión de números para eliminar el if que comprueba el 0 antes del while y hacerlo como [P50327](./P50327_en/P50327.cc).
 
 ## Hechos sin entregar
 
@@ -44,8 +47,6 @@
 
 ## Por hacer
 
-- P39057
-- P59875
 - P74398
 
 ## Rehacer
