@@ -7,7 +7,6 @@ Get two integers and print all the numbers between them in decreasing order
 using namespace std;
 
 int main() {
-    // x and y are integers
     int x, y;
     cin >> x >> y;
 
