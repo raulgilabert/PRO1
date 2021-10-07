@@ -7,21 +7,23 @@ Hn = 1/1 + 1/2 + ... + 1/n
 
 #include <iostream>
 // Needing to fix the digits after the decimal point
-#include <iomanip>
 
 using namespace std;
 
 int main() {
+    // n is a natural number
     int n;
     cin >> n;
 
-    // Harmonic number calc
+    // Harmonic number calc using a total one where the partials are 
+    // accumulated
     double harmonic = 0;
     for (int i = 1; i <= n; ++i) {
         harmonic += 1/double(i);
     }
 
     // Fix the digits after the decimal point to 4
-    //      ------------------------
-    cout << fixed << setprecision(4) << harmonic << endl;
+    cout.setf(ios::fixed);
+    cout.precision(4);
+    cout << harmonic << endl;
 }

@@ -4,8 +4,6 @@ digits
 */
 
 #include <iostream>
-// Required to fix the decimal digits number
-#include <iomanip>
 
 using namespace std;
 
@@ -21,5 +19,7 @@ int main() {
         ++i;
     }
 
-    cout << fixed << setprecision(2) << double(sum)/i << endl;
+    cout.setf(ios::fixed);
+    cout.precision(4);
+    cout << double(sum)/i << endl;
 }

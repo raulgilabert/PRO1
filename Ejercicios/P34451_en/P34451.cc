@@ -8,6 +8,7 @@ elements in the sequence that is multiple of x.
 using namespace std;
 
 int main() {
+    // x is a positive integer
     int x;
     cin >> x;
 

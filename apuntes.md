@@ -26,6 +26,19 @@ Los juegos de pruebas se descargan en la página del Jutge en el que está el en
 ---
 ---
 
+## Tipos de datos
+
+### Double
+
+/!\ Para imprimir un double con datos fijos hay que escribir antes del cout de salida
+
+```c++
+cout.setf(ios::fixed);
+cout.precision(4);
+```
+
+Requiere la importación de la librería <iomanip>
+
 ## Condicionales
 
 ### If
@@ -85,7 +98,7 @@ Las variables declaradas dentro de un bloque solo se pueden utilizar dentro de e
 
 - Se conoce la cantidad de elementos
 
-    En este caso se tiene la cantidad de pasadas del bucle.
+    En este caso se tiene el tamaño de la secuencia.
 
     ```c++
     for (int i = 0; i < max; ++i) {
@@ -103,7 +116,7 @@ Las variables declaradas dentro de un bloque solo se pueden utilizar dentro de e
 
 - No se sabe el número de elementos y no tiene elemento especial.
 
-    En este caso el bucle finaliza cuando en cin no recibe ningún dato.
+    En este caso el bucle finaliza cuando el cin no recibe ningún dato/hay un EOF (End Of File).
 
     ```c++
     while (cin >> element) {
