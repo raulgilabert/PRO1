@@ -7,17 +7,16 @@ Get an natural number and print it reversed with all the zeroes
 using namespace std;
 
 int main() {
+    // num is a matural number
     int num;
     cin >> num;
 
-    int multiplier = 1;
-
-    if (num != 0) {
-        while (num != num%multiplier) {
-            cout << (num/multiplier)%10;
-            multiplier *= 10;
-        }
-    cout << endl;
+    // If the number have more than 1 digit
+    while (num > 9) {
+        // Print the last digit and delete it
+        cout << num%10;
+        num /= 10;
     }
-    else cout << 0 << endl;
+    // Print the remaining digit
+    cout << num%10 << endl;
 }

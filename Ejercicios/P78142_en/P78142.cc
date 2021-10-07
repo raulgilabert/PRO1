@@ -8,7 +8,7 @@ digits
 using namespace std;
 
 int main() {
-    // Number and sum must be double because the input can have decimals
+    // Number and sum are positive real numbers
     double number, sum;
     int i;
     sum = i = 0;
