@@ -48,12 +48,14 @@ Importante: rehacer ejercicios de reversión de números para eliminar el if que
 
 ## Hechos sin entregar
 
+- P38614
 
 ## Haciendo
 
 
 ## Por hacer
 
+- P85370
 
 
 - P13623
