@@ -15,7 +15,7 @@ int main() {
 
     // Read the data from the user and add the numbers to sum
     for (int i = 0; i < r; ++i) {
-        for (int i2 = 0; i2 < c; i2++) {
+        for (int i2 = 0; i2 < c; ++i2) {
             char num;
             cin >> num;
 
