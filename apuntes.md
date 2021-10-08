@@ -28,7 +28,15 @@ Los juegos de pruebas se descargan en la página del Jutge en el que está el en
 
 ## Tipos de datos
 
+### Int
+
+Esta clase de variable guarda un valor numérico sin decimales.
+
+---
+
 ### Double
+
+Este tipo permite el guardado de número con decimales.
 
 /!\ Para imprimir un double con datos fijos hay que escribir antes del cout de salida
 
@@ -37,8 +45,20 @@ cout.setf(ios::fixed);
 cout.precision(4);
 ```
 
-Requiere la importación de la librería <iomanip>
+---
 
+### Char
+
+Esta clase de variable solo permite el guardado de un único caracter. Es traducible a Int para operar con la posición de este, de forma que se puede hacer cambios de mayúscula a minúscula fácilmente. Se declara usando ''.
+
+---
+
+### String
+
+Vector formado por Chars, de forma que se crea un conjunto de estos ordenados de una manera específica. Se declara usando "".
+
+---
+---
 ## Condicionales
 
 ### If
@@ -77,24 +97,7 @@ for (int i = 0; i <= máximo; ++i) {
 
 A diferencia de un while con contador como condición, el contado en el for no es utilizable fuera de este, en cambio en un while este, al ser declarado como variable fuera del while, puede ser usado después.
 
----
----
-
-## Información importante
-
-### Preincremento y postincremento
-
-Hay que utilizar el preincremento.
-
----
-
-### Variables y bloques
-
-Las variables declaradas dentro de un bloque solo se pueden utilizar dentro de este. En caso de ser necesaria una variable fuera de este pero recibir el valor dentro hay que declararla justo antes de entrar al bloque.
-
----
-
-### Secuencias
+### Tipos de secuencias
 
 - Se conoce la cantidad de elementos
 
@@ -127,3 +130,20 @@ Las variables declaradas dentro de un bloque solo se pueden utilizar dentro de e
     El cin devuelve un booleano de forma que en caso de obtener un input devuelve true, en caso contrario, devuelve false.
 
     El final de secuencia se marca con el teclado usando Ctrl+D.
+
+---
+---
+
+## Información importante
+
+### Preincremento y postincremento
+
+Hay que utilizar el preincremento.
+
+---
+
+### Variables y bloques
+
+Las variables declaradas dentro de un bloque solo se pueden utilizar dentro de este. En caso de ser necesaria una variable fuera de este pero recibir el valor dentro hay que declararla justo antes de entrar al bloque.
+
+---
