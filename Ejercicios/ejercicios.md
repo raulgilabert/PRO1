@@ -50,6 +50,7 @@ Importante: rehacer ejercicios de reversión de números para eliminar el if que
 
 - P13623
 - P29973
+- P32533
 - P42280
 
 ## Hechos sin entregar
@@ -63,7 +64,6 @@ Importante: rehacer ejercicios de reversión de números para eliminar el if que
 
 
 - P13623
-- P32533
 - P58153
 - X01646
 - P87198
