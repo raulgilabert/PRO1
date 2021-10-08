@@ -32,6 +32,7 @@
 - P34451
 - P36668 (revisar porque da muy alto)
 - P37500
+- P38614
 - P39057
 - P50327
 - P59539
@@ -40,22 +41,23 @@
 - P65171
 - P74398
 - P78142
+- P85370
 - P97156
 - P97969
 - X32391
 
 Importante: rehacer ejercicios de reversión de números para eliminar el if que comprueba el 0 antes del while y hacerlo como [P50327](./P50327_en/P50327.cc).
 
+- P29973
+
 ## Hechos sin entregar
 
-- P38614
 
 ## Haciendo
 
 
 ## Por hacer
 
-- P85370
 
 
 - P13623
