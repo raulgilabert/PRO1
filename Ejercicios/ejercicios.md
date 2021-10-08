@@ -48,7 +48,9 @@
 
 Importante: rehacer ejercicios de reversión de números para eliminar el if que comprueba el 0 antes del while y hacerlo como [P50327](./P50327_en/P50327.cc).
 
+- P13623
 - P29973
+- P42280
 
 ## Hechos sin entregar
 
