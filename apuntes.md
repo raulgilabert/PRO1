@@ -28,6 +28,10 @@ Los juegos de pruebas se descargan en la página del Jutge en el que está el en
 
 ## Tipos de datos
 
+### Bool
+
+Esta clase de variable permite guardar un valor booleano, es decir, true o false.
+
 ### Int
 
 Esta clase de variable guarda un valor numérico sin decimales.
@@ -59,6 +63,7 @@ Vector formado por Chars, de forma que se crea un conjunto de estos ordenados de
 
 ---
 ---
+
 ## Condicionales
 
 ### If
