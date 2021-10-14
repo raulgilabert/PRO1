@@ -26,6 +26,8 @@ language = input("Language (en, es, ca): ")
 
 dir = "Ejercicios/" + name + "_" + language + "/"
 
+os.system("g++ " + dir + name + ".cc -o " + dir + name + ".x")
+
 for i in range(1, 1 + int(num)):
     print("-------------------")
     print(i)
