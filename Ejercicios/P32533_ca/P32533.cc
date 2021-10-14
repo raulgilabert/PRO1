@@ -17,7 +17,7 @@ int main() {
 
         cout << '/';
 
-        for (int h = n - i; h < n; ++h) cout << '*';
+        for (int j = n - i; j < n; ++j) cout << '*';
 
         cout << endl;        
     }
