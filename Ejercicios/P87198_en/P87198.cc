@@ -6,7 +6,7 @@ int main() {
     int num;
 
     while (cin >> num) {
-        for (int i = 0; i < 3*num-2; ++i) {
+        for (int i = 0; i < 3*num - 2; ++i) {
             int white, x;
 
             // First part of the octagon
