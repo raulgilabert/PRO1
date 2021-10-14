@@ -49,9 +49,15 @@
 Importante: rehacer ejercicios de reversión de números para eliminar el if que comprueba el 0 antes del while y hacerlo como [P50327](./P50327_en/P50327.cc).
 
 - P13623
-- P29973
 - P32533
+- P58153
+- X01646
+- P87198
+
+
 - P42280
+- P29973
+- P33819
 
 ## Hechos sin entregar
 
@@ -61,11 +67,5 @@ Importante: rehacer ejercicios de reversión de números para eliminar el if que
 
 ## Por hacer
 
-
-
-- P13623
-- P58153
-- X01646
-- P87198
 
 ## Rehacer
