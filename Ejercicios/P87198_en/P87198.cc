@@ -3,33 +3,49 @@
 using namespace std;
 
 int main() {
-    int num;
+    int n;
 
-    while (cin >> num) {
-        for (int i = 0; i < 3*num - 2; ++i) {
-            int white, x;
+    while (cin >> n) {
+        // first part
+        /*
+           XXXX
+          XXXXXX
+         XXXXXXXX
+        XXXXXXXXXX
+        */
 
-            // First part of the octagon
-            if (i < num - 1) {
-                white = num - 1 - i;
-                x = num + 2*i;
+        for (int i = 0; i < n; ++i) {
+            for (int j = 1; j < n - i; ++j) cout << ' ';
+            cout << 'X';
+            for (int j = n - i; j < n + n - 1 + i; ++j) cout << 'X';
+            cout << endl;
+        }
+
+        // middle part
+        /*
+        XXXXXXXXXX
+        XXXXXXXXXX
+        XXXXXXXXXX
+        */
+
+        for (int i = 0; i < n - 2; ++i) {
+            for (int j = 0; j < 3*n - 2; ++j) {
+                cout << 'X';
             }
+            cout << endl;
+        }
 
-            // Middle part of the octagon
-            else if (i > num - 2 and i < 2*num - 1) {
-                white = 0;
-                x = 3*num - 2;
-            }
-
-            // Last part of the octagon
-            else {
-                white = -2*num + i + 2;
-                x = 7*num - 2*i - 6;
-            }
-
-            for (int j = 0; j < white; ++j) cout << ' ';
-            for (int j = 0; j < x; ++j) cout << 'X';
-
+        // last part
+        /*
+        XXXXXXXXXX
+         XXXXXXXX
+          XXXXXX
+           XXXX
+        */
+        for (int i = n - 1; i > -1; --i) {
+            for (int j = 1; j < n - i; ++j) cout << ' ';
+            cout << 'X';
+            for (int j = n - i; j < n + n - 1 + i; ++j) cout << 'X';
             cout << endl;
         }
         cout << endl;
