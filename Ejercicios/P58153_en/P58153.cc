@@ -13,7 +13,8 @@ int main() {
     while (cin >> n >> m) {
         double sum = 0;
 
-        // Calc of the harmonic numbers Hn - Hm
+        // Calc of the harmonic numbers Hn - Hm without counting the common 
+        // numbers
         for (int i = m + 1; i <= n; ++i) sum += 1/double(i);
 
         cout.setf(ios::fixed);
