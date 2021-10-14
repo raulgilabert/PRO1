@@ -13,12 +13,11 @@ int main() {
 
     // Print the figure
     for (int i = 0; i < n; ++i) {
-        int j;
-        for (j = 1; j < n - i; ++j) cout << '+';
+        for (int j = 1; j < n - i; ++j) cout << '+';
 
         cout << '/';
 
-        for (int h = j; h < n; ++h) cout << '*';
+        for (int h = n - i; h < n; ++h) cout << '*';
 
         cout << endl;        
     }
