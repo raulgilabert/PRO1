@@ -16,8 +16,8 @@ int main() {
 
         for (int i = 0; i < n; ++i) {
             for (int j = 1; j < n - i; ++j) cout << ' ';
-            cout << 'X';
-            for (int j = n - i; j < n + n - 1 + i; ++j) cout << 'X';
+//            cout << 'X';
+            for (int j = n - i; j < n + n + i; ++j) cout << 'X';
             cout << endl;
         }
 
@@ -43,8 +43,7 @@ int main() {
         */
         for (int i = n - 1; i > -1; --i) {
             for (int j = 1; j < n - i; ++j) cout << ' ';
-            cout << 'X';
-            for (int j = n - i; j < n + n - 1 + i; ++j) cout << 'X';
+            for (int j = n - i; j < n + n - 2 + i; ++j) cout << 'X';
             cout << endl;
         }
         cout << endl;
