@@ -134,7 +134,19 @@ A diferencia de un while con contador como condición, el contado en el for no e
 
     El cin devuelve un booleano de forma que en caso de obtener un input devuelve true, en caso contrario, devuelve false.
 
-    El final de secuencia se marca con el teclado usando Ctrl+D.
+    El final de secuencia se marca con el teclado usando Ctrl+D. (También funciona escribiendo "exit")
+
+---
+
+### Algoritmos en secuencias
+
+- #### Búsqueda
+
+    Se puede parar el bucle al llegar a un elemento específico, pudiendo dejar algunos sin mirar.
+
+- #### Recorrido
+
+    Para solucionar el problema se necesita pasar por todos los elementos de la secuencia.
 
 ---
 ---
