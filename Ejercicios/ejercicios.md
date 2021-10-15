@@ -58,6 +58,7 @@ Importante: rehacer ejercicios de reversión de números para eliminar el if que
 - P33819
 
 
+- P12061
 - P31111
 - P75149
 
@@ -69,7 +70,6 @@ Importante: rehacer ejercicios de reversión de números para eliminar el if que
 
 ## Por hacer
 
-- P12061
 - P89872
 - P23001
 
