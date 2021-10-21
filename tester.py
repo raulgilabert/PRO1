@@ -24,7 +24,7 @@ name = input("Test: ")
 num = input("Num of tests: ")
 language = input("Language (en, es, ca): ")
 
-dir = "Ejercicios/" + name + "_" + language + "/"
+dir = "~/universidad/PRO1/Ejercicios/" + name + "_" + language + "/"
 
 os.system("g++ " + dir + name + ".cc -o " + dir + name + ".x")
 
