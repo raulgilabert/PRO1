@@ -14,7 +14,7 @@ int main() {
 
     // check if the letter is a before reaching the . and if it is, stop the 
     // loop
-    while(letter != '.' and letter != 'a') cin >> letter;
+    while (letter != '.' and letter != 'a') cin >> letter;
  
     if (letter == 'a') cout << "yes" << endl;
     else cout << "no" << endl;

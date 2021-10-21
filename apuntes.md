@@ -32,6 +32,8 @@ Los juegos de pruebas se descargan en la página del Jutge en el que está el en
 
 Esta clase de variable permite guardar un valor booleano, es decir, true o false.
 
+---
+
 ### Int
 
 Esta clase de variable guarda un valor numérico sin decimales.
@@ -143,6 +145,8 @@ A diferencia de un while con contador como condición, el contado en el for no e
 - #### Búsqueda
 
     Se puede parar el bucle al llegar a un elemento específico, pudiendo dejar algunos sin mirar.
+
+    Primero se mira si está y si no se pasa al siguiente elemento.
 
 - #### Recorrido
 

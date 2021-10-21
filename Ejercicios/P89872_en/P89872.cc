@@ -13,19 +13,19 @@ int main() {
     while (cin >> word) {
         // if the word is largest than the second largest it will be the second 
         // or the largest
-        if (word > secondLargest) {
+        if (word > secondLargest and word != largest) {
             // if the word is largest than the largest it is the new largest and the previous one is the second largest
             if (word > largest) {
                 secondLargest = largest;
                 largest = word;
             }
-            // if the word is minot than the largest the word is the new second 
+            // if the word is minor than the largest the word is the new second 
             // largest
-            else if (word < largest) {
+            else {
                 secondLargest = word;
             }
         }
     }
 
-    cout << secondLargest << endl;
+    if (secondLargest != "") cout << secondLargest << endl;
 }
