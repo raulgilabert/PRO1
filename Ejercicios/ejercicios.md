@@ -66,6 +66,7 @@ Importante: rehacer ejercicios de reversión de números para eliminar el if que
 
 - P32046
 - P39225
+- P39308
 
 ## Hechos sin entregar
 
