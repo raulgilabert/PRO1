@@ -1,0 +1,6 @@
+letter('6') = false
+vowel('6') = false
+consonant('6') = false
+uppercase('6') = false
+lowercase('6') = false
+digit('6') = true

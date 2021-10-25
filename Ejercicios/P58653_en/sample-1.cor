@@ -1,0 +1,6 @@
+letter('J') = true
+vowel('J') = false
+consonant('J') = true
+uppercase('J') = true
+lowercase('J') = false
+digit('J') = false
