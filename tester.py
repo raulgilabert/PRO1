@@ -16,8 +16,6 @@ PRO1
       |- ...
    |- P37297_es
    |- ...
-
-The .cc program must be compiled and must be named as the directory deleting the language
 """)
 
 name = input("Test: ")

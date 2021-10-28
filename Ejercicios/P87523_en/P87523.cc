@@ -8,23 +8,34 @@ print "hello". If not, print "bye"
 using namespace std;
 
 int main() {
-    char first, second, third, fourth, letter;
-    int counter = 0;
     bool found = false;
 
-    cin >> first >> second >> third >> fourth;
+    char letter;
+    cin >> letter;
 
-    while (cin >> letter and letter != '.' and not found) {
+    while (not found and letter != '.') {
 	// Check if sequence is 'h', 'e', 'l', 'l' 'o'
-	if (first == 'h' and second == 'e' and third == 'l' and
-		fourth == 'l' and letter == 'o') found = true;
+	if (letter == 'h') {
+	    cin >> letter;
 
-	first = second;
-	second = third;
-	third = fourth;
-	fourth = letter;
+	    if (letter == 'e') {
+		cin >> letter;
+		
+		if (letter == 'l') {
+		    cin >> letter;
 
-	++counter;
+		    if (letter == 'l') {
+			cin >> letter;
+
+			if (letter == 'o') {
+			    found = true;
+			}
+		    }
+		}
+	    }
+	}
+	else
+	   cin >> letter;
     }
 
 

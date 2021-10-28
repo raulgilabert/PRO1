@@ -14,7 +14,8 @@ int main() {
         // if the word is largest than the second largest it will be the second 
         // or the largest
         if (word > secondLargest and word != largest) {
-            // if the word is largest than the largest it is the new largest and the previous one is the second largest
+            // if the word is largest than the largest it is the new largest 
+	    // and the previous one is the second largest
             if (word > largest) {
                 secondLargest = largest;
                 largest = word;
