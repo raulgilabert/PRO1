@@ -70,6 +70,12 @@ Importante: rehacer ejercicios de reversión de números para eliminar el if que
 - P48713
 - P57315
 
+- P17179
+- P71753
+- P71753
+- P89979
+- P90620
+
 ## Hechos sin entregar
 
 
