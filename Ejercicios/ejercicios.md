@@ -46,7 +46,8 @@
 - P97969
 - X32391
 
-Importante: rehacer ejercicios de reversión de números para eliminar el if que comprueba el 0 antes del while y hacerlo como [P50327](./P50327_en/P50327.cc).
+Importante: rehacer ejercicios de reversión de números para eliminar el if que 
+comprueba el 0 antes del while y hacerlo como [P50327](./P50327_en/P50327.cc).
 
 - P13623
 - P32533
@@ -84,5 +85,9 @@ Importante: rehacer ejercicios de reversión de números para eliminar el if que
 
 ## Por hacer
 
+- P73231
+- P77686
+- P93157
+- X06314
 
 ## Rehacer
