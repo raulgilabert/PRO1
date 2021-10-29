@@ -31,5 +31,28 @@ int getMiddleDigit(int num) {
 }
 
 int main() {
-    cout << getMiddleDigit(23454) << endl;
+    int n;
+    cin >> n;
+
+    int prev, num;
+    bool first = true, found = false;
+
+    int i = 0;
+    while (not found  and i < n) {
+	cin >> num;
+	if (not first) {
+	    if (getMiddleDigit(num) != getMiddleDigit(prev)) {
+		if (i%2 == 1) 
+		    cout << 'B' << endl;
+
+		else
+		    cout << 'A' << endl;
+	    
+		found = true;
+	    }
+	}
+
+	prev = num;
+	first = false;
+    }
 }
