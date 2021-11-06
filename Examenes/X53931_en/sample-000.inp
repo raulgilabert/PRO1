@@ -1,0 +1,13 @@
+4 3
+lapiz 4 boli 2 lapiz 1
+raqueta 2 boli 3 lapiz 5
+mesa 1 silla 2 mesa 3
+silla 4 lapiz 2 raqueta 1
+
+0 0 lapiz
+3 1 lapiz
+0 2 lapiz
+3 2 raqueta
+0 0 cuchara
+2 1 silla
+1 2 silla

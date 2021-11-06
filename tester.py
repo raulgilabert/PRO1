@@ -31,5 +31,5 @@ for i in range(1, 1 + int(num)):
     print(i)
     print("-------------------")
 
-    os.system(dir + name + ".x < " + dir + "sample-" + str(i) + ".inp > " + dir + "sample-" + str(i) + ".out")
-    os.system("diff " + dir + "sample-" + str(i) + ".out " + dir + "sample-" + str(i) + ".cor")
+    os.system(dir + name + ".x < " + dir + "sample" + str(i) + ".inp > " + dir + "sample" + str(i) + ".out")
+    os.system("diff " + dir + "sample" + str(i) + ".out " + dir + "sample" + str(i) + ".cor")
