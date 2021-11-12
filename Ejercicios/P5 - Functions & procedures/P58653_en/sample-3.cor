@@ -1,0 +1,6 @@
+letter('.') = false
+vowel('.') = false
+consonant('.') = false
+uppercase('.') = false
+lowercase('.') = false
+digit('.') = false
