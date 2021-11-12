@@ -21,7 +21,7 @@ Hay 3 controles para los que es necesario un mínimo de ejercicios entregados.
 
 ### Juegos de pruebas
 
-Los juegos de pruebas se descargan en la página del Jutge en el que está el 
+Los juegos de pruebas se descargan en la página del Jutge en el que está el
 enunciado en la imagen a la derecha del PDF.
 
 ---
@@ -31,7 +31,7 @@ enunciado en la imagen a la derecha del PDF.
 
 ### Bool
 
-Esta clase de variable permite guardar un valor booleano, es decir, true o 
+Esta clase de variable permite guardar un valor booleano, es decir, true o
 false.
 
 ---
@@ -46,7 +46,7 @@ Esta clase de variable guarda un valor numérico sin decimales.
 
 Este tipo permite el guardado de número con decimales.
 
-/!\ Para imprimir un double con datos fijos hay que escribir antes del cout de 
+/!\ Para imprimir un double con datos fijos hay que escribir antes del cout de
 salida
 
 ```c++
@@ -58,15 +58,15 @@ cout.precision(4);
 
 ### Char
 
-Esta clase de variable solo permite el guardado de un único caracter. Es 
-traducible a Int para operar con la posición de este, de forma que se puede 
+Esta clase de variable solo permite el guardado de un único caracter. Es
+traducible a Int para operar con la posición de este, de forma que se puede
 hacer cambios de mayúscula a minúscula fácilmente. Se declara usando ''.
 
 ---
 
 ### String
 
-Vector formado por Chars, de forma que se crea un conjunto de estos ordenados 
+Vector formado por Chars, de forma que se crea un conjunto de estos ordenados
 de una manera específica. Se declara usando "".
 
 ---
@@ -76,8 +76,8 @@ de una manera específica. Se declara usando "".
 
 ### If
 
-Los if van con la condición entre (). En caso de que sea una sola línea a 
-ejecutar tras este se pueden poner en la misma o una abajo sin necesidad de 
+Los if van con la condición entre (). En caso de que sea una sola línea a
+ejecutar tras este se pueden poner en la misma o una abajo sin necesidad de
 usar {}.
 
 ```c++
@@ -93,7 +93,7 @@ if (condición) {
 
 ### While
 
-Sintácticamente es muy similas a los if. Ejecuta el código dentro del bloque 
+Sintácticamente es muy similas a los if. Ejecuta el código dentro del bloque
 siempre que la condición de ejecución se mantenga como cierta.
 
 ```c++
@@ -104,8 +104,8 @@ while (condición) {
 
 ### For
 
-El for es una construcción no-básica, funcionando a partir de un while y que 
-debe de ser usado únicamente si se sabe la cantidad de veces que se va a 
+El for es una construcción no-básica, funcionando a partir de un while y que
+debe de ser usado únicamente si se sabe la cantidad de veces que se va a
 ejecutar el bucle, teniendo la sintáxis siguiente:
 
 ```c++
@@ -114,8 +114,8 @@ for (int i = 0; i <= máximo; ++i) {
 }
 ```
 
-A diferencia de un while con contador como condición, el contado en el for no 
-es utilizable fuera de este, en cambio en un while este, al ser declarado como 
+A diferencia de un while con contador como condición, el contado en el for no
+es utilizable fuera de este, en cambio en un while este, al ser declarado como
 variable fuera del while, puede ser usado después.
 
 ### Tipos de secuencias
@@ -140,7 +140,7 @@ variable fuera del while, puede ser usado después.
 
 - No se sabe el número de elementos y no tiene elemento especial.
 
-    En este caso el bucle finaliza cuando el cin no recibe ningún dato/hay un 
+    En este caso el bucle finaliza cuando el cin no recibe ningún dato/hay un
     EOF (End Of File).
 
     ```c++
@@ -149,10 +149,10 @@ variable fuera del while, puede ser usado después.
     }
     ```
 
-    El cin devuelve un booleano de forma que en caso de obtener un input 
+    El cin devuelve un booleano de forma que en caso de obtener un input
     devuelve true, en caso contrario, devuelve false.
 
-    El final de secuencia se marca con el teclado usando Ctrl+D. (También 
+    El final de secuencia se marca con el teclado usando Ctrl+D. (También
     funciona escribiendo "exit")
 
 ---
@@ -161,14 +161,14 @@ variable fuera del while, puede ser usado después.
 
 - #### Búsqueda
 
-    Se puede parar el bucle al llegar a un elemento específico, pudiendo dejar 
+    Se puede parar el bucle al llegar a un elemento específico, pudiendo dejar
     algunos sin mirar.
 
     Primero se mira si está y si no se pasa al siguiente elemento.
 
 - #### Recorrido
 
-    Para solucionar el problema se necesita pasar por todos los elementos de la 
+    Para solucionar el problema se necesita pasar por todos los elementos de la
     secuencia.
 
 ---
@@ -192,11 +192,11 @@ Secuencia que al operar requiere de otra secuencia.
 
 ## Subprogramas
 
-Trozo de código fuera de la función main. Permite una mayor legibilidad del 
-código al dividir el programa en varias funciones que realizan tareas 
+Trozo de código fuera de la función main. Permite una mayor legibilidad del
+código al dividir el programa en varias funciones que realizan tareas
 específicas.
 
-Deben de escribirse antes del main o, en caso de escribirlo después, hay que 
+Deben de escribirse antes del main o, en caso de escribirlo después, hay que
 declarar la cabecera del subprograma antes de él.
 
 ```c++
@@ -225,7 +225,7 @@ int division(int n1, int n2) {
 ```
 
 Una función debe tener siempre un return para devolver un valor en su llamada y
-el valor que se devuelve debe de ser del tipo escrito en la declaración de la 
+el valor que se devuelve debe de ser del tipo escrito en la declaración de la
 función. Esto no es aplicable si no se da un tipo en la declaración usando la
 estructura siguiente:
 
@@ -235,23 +235,23 @@ void function(int x) {
 }
 ```
 
-En este caso esto es una acción ya que para saber lo que se ha procesado hay 
+En este caso esto es una acción ya que para saber lo que se ha procesado hay
 que mirar el valor de una variable interna, por ejemplo:
 
 ```c++
 void factores(int n) {
     int f = 2;
     while (x != 1) {
-	if (x%f == 0) {
-	    cout << f << endl;
-	    x /= f;
-	}
-	else ++f;
+    if (x%f == 0) {
+        cout << f << endl;
+        x /= f;
+    }
+    else ++f;
     }
 }
 ```
 
-Así se puede ver que una acción no devuelve ningún valor a diferencia de una 
+Así se puede ver que una acción no devuelve ningún valor a diferencia de una
 función ya que ya imprime el valor.
 
 Las funciones se usan en operaciones como un argumento más de esta. Una acción,
@@ -268,7 +268,7 @@ como una operación, pudiendo tener también el valor de otra función dentro.
 
 ### Llamada por valor
 
-Pasa el valor de la variable pudiendo operar con este sin modificar el valor 
+Pasa el valor de la variable pudiendo operar con este sin modificar el valor
 que tiene en la función donde se ha llamado.
 
 ```c++
@@ -277,11 +277,9 @@ int funcion(int x) {
 }
 ```
 
-
-
 ### Llamada por referencia
 
-Pasa la ubicación de memoria (un puntero), haciendo que, al editar el valor de 
+Pasa la ubicación de memoria (un puntero), haciendo que, al editar el valor de
 esta variable en la función, se cambie también en la de llamada.
 
 ```c++
@@ -290,8 +288,18 @@ void accion(int& x) {
 }
 ```
 
+Los datos por referencia hacen un programa más eficiente al usar menor memoria
+
 ---
 ---
+
+## Recursividad
+
+Un subprograma es recursivo cuando este contenga una llamada a sí mismo.
+
+---
+---
+
 
 ## Información importante
 
@@ -303,8 +311,8 @@ Hay que utilizar el preincremento.
 
 ### Variables y bloques
 
-Las variables declaradas dentro de un bloque solo se pueden utilizar dentro de 
-este. En caso de ser necesaria una variable fuera de este pero recibir el valor 
+Las variables declaradas dentro de un bloque solo se pueden utilizar dentro de
+este. En caso de ser necesaria una variable fuera de este pero recibir el valor
 dentro hay que declararla justo antes de entrar al bloque.
 
 ---
