@@ -346,7 +346,7 @@ Esto sirve tanto para leer el dato como para modificarlo.
 
 ```c++
 
-int funcion(vector<int> s) {
+int funcion(vector<int>& s) {
     // código
 }
 ```
@@ -355,7 +355,7 @@ En caso de que únicamente se lea hay que pasarlo por referencia constante de la
 siguiente manera:
 
 ```c++
-int funcion(const vector<int> s) {
+int funcion(const vector<int>& s) {
     // código
 }
 ```
@@ -381,8 +381,8 @@ int suma(vector<int> s) {
 
 ```c++
 vector<int> concatenate(const vector<int>& s, const vector<int>& p) {
-    int v1 = s.size();
-    int v2 = p.size();
+    int n1 = s.size();
+    int n2 = p.size();
 
     vector<int> res(n1 + n2);
 
