@@ -297,9 +297,108 @@ Los datos por referencia hacen un programa más eficiente al usar menor memoria
 
 Un subprograma es recursivo cuando este contenga una llamada a sí mismo.
 
+Esta recursividad se expresa mediante una función que contiene el cálculo
+necesario en esta con una llamada a sí mismo modificando un poco el dato de
+entrada de forma que este acaba el bucle y procede a la devolución del dato.
+
+Un ejemplo de esto es el programa para calcular el factorial de un número como
+es el caso de este programa.
+
+```c++
+int factorial(int n) {
+    if (n > 0)
+	return n*factorial(n - 1);
+
+    return 1;
+}
+```
+
 ---
 ---
 
+## Vectores
+
+Declaración de un vector:
+```c++
+#include <vector>
+
+vector<T> nombre(S, I);
+```
+
+En esto, T es el tipo de los datos de los valores internos del vector, S es la
+cantidad de elementos e I es el valor inicial de estos en el vector.
+
+Los parámertos S e I son opcionales. Si solo hay un elemento este es S y si hay
+2 o más será S I.
+
+Para acceder a los datos siempre se hace por el índice de este de la siguiente
+manera:
+
+```c++
+nombre[i]
+```
+
+Esto sirve tanto para leer el dato como para modificarlo.
+
+### Paso de información
+
+#### Por referencia
+
+```c++
+
+int funcion(vector<int> s) {
+    // código
+}
+```
+
+En caso de que únicamente se lea hay que pasarlo por referencia constante de la
+siguiente manera:
+
+```c++
+int funcion(const vector<int> s) {
+    // código
+}
+```
+
+#### Por valor
+
+Aunque esto se pueda programar como es ineficiente no se puede usar en clase y
+el compilador lo pasa por referencia.
+
+```c++
+
+int suma(vector<int> s) {
+    int n = s.size();
+    int sum = 0;
+    for (int i = 0; i < n; ++i)
+	sum += s[i];
+    }
+    return sum;
+}
+```
+
+### Devolución de un vector
+
+```c++
+vector<int> concatenate(const vector<int>& s, const vector<int>& p) {
+    int v1 = s.size();
+    int v2 = p.size();
+
+    vector<int> res(n1 + n2);
+
+
+    for (int i = 0; i < n1; ++i)
+	res[i] = v1[i];
+
+    for (int i = 0; i < n2; ++i)
+	res[n1 + i] = v2[i];
+
+    return res;
+}
+```
+
+---
+---
 
 ## Información importante
 
