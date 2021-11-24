@@ -19,7 +19,6 @@ int number_of_digits(int n) {
 
 int main() {
     int num;
-    cin >> num;
-
-    cout << number_of_digits(num) << endl;
+    while (cin >> num)
+        cout << number_of_digits(num) << endl;
 }
