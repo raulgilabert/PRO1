@@ -1,22 +1,27 @@
-//
-// Created by raulg on 11/19/21.
-//
-
 #include <iostream>
 
 using namespace std;
 
-/*
-Get a number n and print a bar of asterisks 2^n - 1
-*/
+// Precondition:
+// 	n >= 1
+//
+// Postcondition:
+// 	Draw of bars
+void draw(int n) {
+    if (n > 0) {
+	draw(n - 1);
+	draw(n - 1);
+	// Draw the middle bar
+	for (int i = 0; i < n; ++i)
+	    cout << '*';
 
-
-void print_asterisks(int n) {
+	cout << endl;
+    }
 }
 
-int main() {
-    int num;
-    cin >> num;
 
-    print_asterisks(num);
+int main() {
+    int n;
+    cin >> n;
+    draw(n);
 }
