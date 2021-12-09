@@ -27,8 +27,8 @@ void print_data(vector<int> data) {
     int num_to_check = data[vsize - 1], counter = 0;
 
     for (int i = 0; i < vsize - 1; ++i) {
-	if (data[i] == num_to_check)
-	    ++counter;
+	    if (data[i] == num_to_check)
+	        ++counter;
     }
 
     cout << counter << endl;

@@ -1,0 +1,20 @@
+  12345678910
+a XXXXX.XX.X
+b .........X
+c .XX......X
+d .........X
+e ...X......
+f X..X......
+g X........X
+h X...XX...X
+i .........X
+j XXX.XXX..X
+
+a1 touched!
+a5 touched!
+a6 water! closest ship at distance 1
+d8 water! closest ship at distance 2
+e8 water! closest ship at distance 2
+f8 water! closest ship at distance 2
+e6 water! closest ship at distance 2
+e7 water! closest ship at distance 3

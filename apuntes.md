@@ -439,6 +439,46 @@ Permite crear un tipo de datos específico para el programa
 ---
 ---
 
+## Matrices
+
+Una matriz es un tipo de vector que contiene vectores en su interior que puede
+ser declarado tanto como un vector de vectores directamente como mediante el 
+uso de typedef.
+
+```c++
+
+// Declaración como vector de vectores de tamaño 0
+vector<vector<int> > matrix;
+
+// Declaración como vector de vectores de tamaño determinado
+vector<vector<int> > matrix(5, vector<int>(10));
+
+// Declaración como vector de vector de tamaño determinado y elemento inicial
+vector<vector<int> > matrix(5, vector<int>(10, 0));
+
+// Declaración usando typedef
+typedef vector<int> row;
+typedef vector<row> matrix2D;
+typedef vector<matrix2D> matrix3D;
+```
+
+/!\ Importante poner ```> >``` en la declaración de una matriz para evitar
+problemas de ambigüedad con ciertos compiladores.
+
+Como se puede ver en el ejemplo dado, una matriz no tiene que ser solo de dos
+dimensiones. Puede ser de cuantas sea necesario, teniendo solo que añadir la 
+matriz de dimensión menor a otra más.
+
+También se puede declarar usando arrays pero no se permite su uso en PRO1:
+
+```c++
+int A[5][10];
+```
+
+
+---
+---
+
 ## Información importante
 
 ### Preincremento y postincremento
