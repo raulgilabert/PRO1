@@ -415,19 +415,23 @@ individualmente cada elemento con la posición que sale del for.
 
 ### Búsqueda
 
-Hay dos opciones, un para vectores ordenados y otra para vectores no odenados.
+Hay dos opciones, un para vectores ordenador y otra para vectores no odenados.
 En caso de que esté desordenado se hace una búsqueda lineal leyendo uno por uno
 los elementos del vector. La otra opción con vectores ordenados es usar la
 búsqueda dicotómica, ejecutándose primero leyendo la mitad del vector. En caso
 de que el valor sea mayor del que se busca se mira la mitad menor. En caso de
-que sea mayor lo que se busca se mira la mitad mayor y en caso de que sea igual se deja de buscar porque ya se ha encontrado el valor.
+que sea mayor lo que se busca se mira la mitad mayor y en caso de que sea igual 
+se deja de buscar porque ya se ha encontrado el valor.
 
 ### Strings
 
 Se puede conseguir el tamaño de un string usando la función 
 ```string.lenght()``` de la liberería string.
 
-### Typedef
+---
+---
+
+## Typedef
 
 Permite crear un tipo de datos específico para el programa
 
