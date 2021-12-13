@@ -479,6 +479,62 @@ int A[5][10];
 ---
 ---
 
+## Structs
+
+Sirve para guardar cierta información de una clase, por ejemplo, para guardar
+los datos de una persona se haría de la siguiente manera:
+
+```c++
+struct {
+    string first_name, last_name;
+    int age;
+    bool can_vote;
+    Email email;
+} var_person;
+```
+
+El problema con esto es al momento de pasarlo como parámetro en una
+acción/función. En ese caso se utiliza un ```typedef``` para permitir una mayor
+facilidad de escritura en estos casos:
+
+```c++
+typedef struct {
+    string first_name, last_name;
+    int age;
+    bool can_vote;
+    Email email;
+} Person;
+
+// ---
+
+int get_age(Person data_person) {
+    // Código
+}
+```
+
+Otra opción de declaración de una tupla pero sin usar el typedef es de la
+siguiente manera:
+
+```c++
+struct Person {
+    string first_name, last_name;
+    int age;
+    bool can_vote;
+    Email email;
+};
+
+// ---
+
+int get_age(Person data_person) {
+    // Código
+}
+```
+
+
+
+---
+---
+
 ## Información importante
 
 ### Preincremento y postincremento
