@@ -70,11 +70,23 @@ bool check_column(const Matrix& sudoku) {
 bool check_square(const Matrix& sudoku) {
     bool error = false;
 
-    for (int i = 0; i < 9; ++i) {
-        for (int j = 3*i; j < 3*(i + 1); ++j) {
+    for (int i = 0; not error and i < 3; ++i) {
+        for (int j = 0; not error and j < 3; ++j) {
+            vector<int> subQuad(9, 0);
+            for (int k = 0; not error and k < 3; ++k) {
+                for (int l = 0; not error and l < 3; ++l) {
+                    int num = sudoku[3 * i + k][3 * j + l];
 
+                    if (subQuad[num - 1] == 1)
+                        error = true;
+
+                    ++subQuad[num - 1];
+                }
+            }
         }
     }
+
+    return (not error);
 }
 
 

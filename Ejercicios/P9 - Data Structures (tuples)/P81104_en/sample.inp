@@ -1,0 +1,14 @@
+7
+Helen_OConnell       12345678  4  P1 9   PHYSICS 9.5   IC 9.5   ALGEBRA 10
+Michael_Martin       77777777  3  ANALYSIS 8   P1 7   IC 9
+Peter_Great_Disaster 55599666  4  P1 0   PHYSICS -1   ALGEBRA 0   IC 0
+Alicia_Nottoo_Bad    55511111  4  XC 5   P1 6.5   PHYSICS 5.5   IL 4
+Paul_No_Registration 55544444  0
+John_Smith           55533333  2  P1 9.25   PHYSICS -1
+George_Calm          66666666  4  P1 -1   PHYSICS -1   IC -1   ALGEBRA -1
+
+12345678 P1
+55533333 P1
+55533333 PHYSICS
+55533333 PRAP
+11111111 P1

@@ -530,6 +530,81 @@ int get_age(Person data_person) {
 }
 ```
 
+Para acceder a los datos guardados en una tupla o escribir en ella, se accede
+así:
+
+```c++
+struct Person {
+    string first_name, last_name;
+    int age;
+    bool can_vote;
+    Email email;
+};
+
+// ---
+
+int get_age(Person data_person) {
+    return data_person.age;
+}
+```
+
+---
+---
+
+## Sorting
+
+Los algoritmos de sorting son algoritmos dedicados a ordenar elementos de un
+vector de más pequeño a más grande.
+
+### Selection sort
+
+```c++
+// Get position of the minimum element
+int pos_min(const vector<elem>& v, int left, int right) {
+    int min = left;
+
+    for (int i = left + 1, i < right; ++i) {
+	if (v[i] < v[min])
+	    min = i;
+    }
+
+    return i;
+}
+
+void selection_sort(vector<elem>& v) {
+    int last = v.size() - 1;
+
+    for (int i = 0; i < last; ++i) {
+	int k = pos_min(v, i, last);
+	swap(v[k], v[i]);
+    }
+}
+```
+
+### Insertion sort
+
+```c++
+void insertion_sort(vector<elem>& v) {
+    int n = v.size();
+
+    for (int i = 1; i < n; ++i) {
+	elem x = v[i];
+	int j = i;
+	while(j > 0 and v[j - i] > x) {
+	    v[j] = v[j - 1];
+	    --j;
+	}
+	v[j] = x;
+    }
+}
+```
+
+### Bubble sort
+
+
+
+### Merge sort
+
 
 
 ---

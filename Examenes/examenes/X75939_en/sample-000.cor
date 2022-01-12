@@ -1,0 +1,12 @@
+true: 0 0, 0 0
+true: 0 0, 0 0
+true: 3 3, 1 1
+false: 3 4, 1 1
+true: 4 4, 4 4
+true: 4 4, 4 4
+false: 5 6, 5 5
+true: 0 0, 0 0
+true: 27 27, 27 27
+false: 33 26, 25 30
+true: 9 9, 9 9
+true: 29 29, 20 20
