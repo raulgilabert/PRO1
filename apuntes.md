@@ -601,7 +601,24 @@ void insertion_sort(vector<elem>& v) {
 
 ### Bubble sort
 
+```c++
+void swap(int& a, int& b) {
+    int aux = a;
+    a = b;
+    b = aux;
+}
 
+void bubble_sort(vector<elem>& v) {
+    int n = v.size();
+
+    for (int i = 0; i < n - 1; ++i) {
+	for (int j = n - 1; j > i; --j) {
+	    if (v[j - 1] > v[j])
+		swap(v[j - 1], v[j]);
+	}
+    }
+}
+```
 
 ### Merge sort
 
